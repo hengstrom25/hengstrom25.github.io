@@ -1,10 +1,10 @@
 # Site settings
-title: 
+title: Coding with Heidi
 header-img: img/home-bg.png
 email: hengstrom25@gmail.com
 copyright_name: hengstrom25
 description: > # this means to ignore newlines until "baseurl:"
-  
+  A blog about my journey in the land of code
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  hengstrom25
