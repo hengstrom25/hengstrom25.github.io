@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "Sinatra Portfolio Project: Beer Enthusiast"
+title:      "Sinatra - Beer Enthusiast"
 date:       2018-09-17 11:54:29 -0400
 permalink:  sinatra_-_beer_enthusiast
 ---
