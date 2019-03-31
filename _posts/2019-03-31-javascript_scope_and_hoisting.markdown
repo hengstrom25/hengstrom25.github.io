@@ -23,7 +23,7 @@ A variable declared within a function is in the local, or function, scope. For e
 ```
 function newFunction() {
      let b = Banana
-		 console.log("y")
+console.log("y")
 }
 ```
 
@@ -34,7 +34,7 @@ The exception would be if the variable within the function was declared without 
 ```
 function newFunction() {
      b = Banana
-		 console.log("b")
+console.log("b")
 }
 ```
 
