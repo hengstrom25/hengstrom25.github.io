@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Javascript Scope and Hoisting"
-date:       2019-03-31 20:28:13 +0000
+date:       2019-03-31 16:28:14 -0400
 permalink:  javascript_scope_and_hoisting
 ---
 
