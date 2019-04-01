@@ -24,8 +24,8 @@ A variable declared within a function is in the **function scope**.  These varia
 
 ```
 function newFunction() {
- let b = "Banana"
- console.log("b")
+ let b = "Banana";
+ console.log("b");
 }
 ```
 
@@ -33,8 +33,8 @@ versus:
 
 ```
 function newFunction() {
- var b = "Banana"
- console.log("b")
+ var b = "Banana";
+ console.log("b");
 }
 ```
 
@@ -52,7 +52,7 @@ Function hoisting refers to when a function is available in the two phases of th
 
 ```
 function anotherFunction() {
- return "I'm a function"
+ return "I'm a function";
 }
 
 anotherfunction()
@@ -64,7 +64,7 @@ and
 anotherfunction()
 
 function anotherFunction() {
- return "I'm a function"
+ return "I'm a function";
 }
 ```
 
@@ -79,7 +79,7 @@ If a variable is declared with ```let``` or ```const``` after the variable is ca
 Example A:
 ```
 function yetAnotherFunction() {
- let apple = banana;
+ let apple = "banana";
  console.log(apple);
 }
 
@@ -90,7 +90,7 @@ Example B:
 ```
 function yetAnotherFunction() {
  console.log(apple);
- let apple = banana;
+ let apple = "banana";
 }
 
 //LOG: Error - apple has not been declared.
@@ -101,8 +101,8 @@ However, if you use ```var``` instead of ```let```, the declaration is hoisted t
 Example C:
 ```
 function yetAnotherFunction() {
- console.log(apple)
- var apple = banana
+ console.log(apple);
+ var apple = "banana";
 }
 
 //LOG: apple is undefined. 
