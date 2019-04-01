@@ -10,37 +10,35 @@ In Javascript, it is important to know when different variables and functions ar
 
 **SCOPE**
 
-Javascript has two types of scope: **global** and **local**. Any variable declared outside of a function is available to the entire program. For example:
+Javascript has three types of scope: **global** and **function** and **block**. Any variable declared outside of a block, or a function, is available to the entire program. For example:
 
 ```
-let a = Apple
+let a = "Apple"
 ```
 
 Any time you called "a" within your program, it would return "Apple."
 
-A variable declared within a function is in the local, or function, scope. For example:
+A variable declared within a function is in the function scope. For example:
 
 ```
 function newFunction() {
-     let b = Banana
-console.log("y")
+ var b = Banana
+ console.log("b")
 }
 ```
 
-In these two examples, the variable "x" is available anywhere ("globally") in the program. The variable "y" is only available within newFunction() and cannot be referred to outside of the function. If you tried to use "y" in another part program, it would come back as undefined. 
+In these two examples, the variable "a" is available anywhere ("globally") in the program. The variable "b" is only available within newFunction() and cannot be referred to outside of the function. If you tried to use "b" in another part program, you would see an error message that "b" has not been declared.
 
 The exception would be if the variable within the function was declared without using var, let, or const:
 
 ```
 function newFunction() {
-     b = Banana
-console.log("b")
+ b = Banana
+ console.log("b")
 }
 ```
 
 Even though this is declared within newFunction(), it was not declared using var, let, or const and is automatically a global variable. This makes it difficult to keep track of variables and should be avoided wherever possible.
-
-**BLOCK SCOPE**
 
 Starting in ES2015, block scoping is partially available. This means that a block can support scope, as long as you use let and const. 
 
@@ -48,10 +46,9 @@ For example:
 
 ```
 if (true) {
-    let a = Apple;
-		
-		const b = Banana;
-	}	
+ let a = Apple;
+ const b = Banana;
+}	
 ```
 
 If you tried to call either a or b, they would come back as undefinied since they are contained within the block. 
