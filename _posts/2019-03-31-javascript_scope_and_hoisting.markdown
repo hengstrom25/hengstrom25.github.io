@@ -18,9 +18,9 @@ let a = "Apple"
 
 This variable is a **global** variable and, if declared outside of a function, is available anywhere in the program.
 
-Variables that are declared without using ```var```, ```let```, or ```const``` are always in the global scope regardless of where they are originally declared. 
+Variables that are introduced without using ```var```, ```let```, or ```const``` are always in the global scope regardless of where they are originally introduced. 
 
-A variable declared within a function is in the **function scope**.  These variables can either be **blocked scoped** or not, depending on how the variable is declared. For example:
+A variable declared within a function is either in **function scope** or **block scope**, depending on how the variable is declared.. For example:
 
 ```
 function newFunction() {
@@ -39,7 +39,7 @@ function newFunction() {
 ```
 
 
-When a variable is declared within a block using either ```let``` or ```const```, it is **block scoped** and stays within the block (between the curly braces). If you tried to called the varaible elsewhere in the program, an error would be thrown stating that the variable is undefined. However, if the variable is declared using ```var```, it is only **function scoped** and, if called elsewhere, would return the value. It is better practice to declare variables using ```let``` or ```const``` to avoid confusion and code that is difficult to debug.
+When a variable is declared within a block using either ```let``` or ```const```, it is **block scoped** and stays within the block (between the curly braces). If you tried to reference the variable outside of the block, an error would be thrown stating that the variable is undefined. However, if the variable is declared using ```var```, it is only **function scoped** and, if referenced elsewhere in the function, would return the value. It is better practice to declare variables using ```let``` or ```const``` to avoid confusion and code that is difficult to debug.
 
 
 **HOISTING**
@@ -74,7 +74,7 @@ While both of these work the same, it's better practice to declare functions at 
 
 *Variable Hoisting*
 
-If a variable is declared with ```let``` or ```const``` after the variable is called in your code, an error message will be thrown telling you that you have yet to declare the variable. 
+If a variable is referenced in  your code before being declared with ```let``` or ```const```, an error message will be thrown telling you that you have yet to declare the variable. 
 
 Example A:
 ```
