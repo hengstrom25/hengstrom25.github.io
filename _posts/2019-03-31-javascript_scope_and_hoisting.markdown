@@ -16,52 +16,30 @@ Javascript has three types of scope: **global** and **function** and **block**. 
 let a = "Apple"
 ```
 
-Any time you called "a" within your program, it would return "Apple."
+This variable is a **global** variable and, if declared outside of a function, is available anywhere in the program.
 
-A variable declared within a function is in the function scope. For example:
+Variables that are declared without using ```var```, ```let```, or ```const``` are always in the global scope regardless of where they are originally declared. 
+
+A variable declared within a function is in the **function scope**.  These variables can either be **blocked scoped** or not, depending on how the variable is declared. For example:
 
 ```
 function newFunction() {
- var b = Banana
+ let b = "Banana"
  console.log("b")
 }
 ```
 
-In these two examples, the variable "a" is available anywhere ("globally") in the program. The variable "b" is only available within newFunction() and cannot be referred to outside of the function. If you tried to use "b" in another part program, you would see an error message that "b" has not been declared.
-
-The exception would be if the variable within the function was declared without using var, let, or const:
+versus:
 
 ```
 function newFunction() {
- b = Banana
+ var b = "Banana"
  console.log("b")
 }
 ```
 
-Even though this is declared within newFunction(), it was not declared using var, let, or const and is automatically a global variable. This makes it difficult to keep track of variables and should be avoided wherever possible.
 
-Starting in ES2015, block scoping is partially available. This means that a block can support scope, as long as you use let and const. 
-
-For example:
-
-```
-if (true) {
- let a = Apple;
- const b = Banana;
-}	
-```
-
-If you tried to call either a or b, they would come back as undefinied since they are contained within the block. 
-
-However, block scoping does not variables declared with var. In this example, 
-
-```
-if (true) {
-     var c = Cat;
-}
-```
-
-calling c would return "Cat", not undefined. This makes it difficult to keep track of variables, so it's always preferred to use let and const. 
+When a variable is declared within a block using either ```let``` or ```const```, it is **block scoped** and stays within the block (between the curly braces). If you tried to called the varaible elsewhere in the program, an error would be thrown stating that the variable is undefined. However, if the variable is declared using ```var```, it is only **function scoped** and, if called elsewhere, would return the value. It is better practice to declare variables using ```let``` or ```const``` to avoid confusion and code that is difficult to debug.
 
 
 **HOISTING**
@@ -74,7 +52,7 @@ Function hoisting refers to when a function is available in the two phases of th
 
 ```
 function anotherFunction() {
-     return "I'm a function"
+ return "I'm a function"
 }
 
 anotherfunction()
@@ -86,7 +64,7 @@ and
 anotherfunction()
 
 function anotherFunction() {
-     return "I'm a function"
+ return "I'm a function"
 }
 ```
 
@@ -96,13 +74,13 @@ While both of these work the same, it's better practice to declare functions at 
 
 *Variable Hoisting*
 
-Variable hoisting is simliar to function hoisting, but if a variable is declared with let or const before the variable is called, an error message will be thrown telling you that you have yet to declare the variable. 
+If a variable is declared with ```let``` or ```const``` after the variable is called in your code, an error message will be thrown telling you that you have yet to declare the variable. 
 
 Example A:
 ```
 function yetAnotherFunction() {
-     let apple = banana;
-     console.log(apple);
+ let apple = banana;
+ console.log(apple);
 }
 
 //LOG: banana
@@ -111,26 +89,26 @@ function yetAnotherFunction() {
 Example B:
 ```
 function yetAnotherFunction() {
-     console.log(apple);
-     let apple = banana;
+ console.log(apple);
+ let apple = banana;
 }
 
 //LOG: Error - apple has not been declared.
 ```
 
-However, if you use var instead of let, the declaration is hoisted to the top and comes back as "undefined" rather than throwing an error. 
+However, if you use ```var``` instead of ```let```, the declaration is hoisted to the top and comes back as "undefined" rather than throwing an error. 
 
 Example C:
 ```
 function yetAnotherFunction() {
-     console.log(apple)
-		 var apple = banana
+ console.log(apple)
+ var apple = banana
 }
 
 //LOG: apple is undefined. 
 ```
 
-This makes it difficult to keep track of when the variables have been defined and it is best practice to either use let or const when defining variables. This helps avoid this example of hoisting and keeps all of your variable declarations at the top of your code. 
+This makes it difficult to keep track of when the variables have been defined and it is best practice to either use ```let``` or ```const``` when defining variables. This helps avoid this example of hoisting and keeps all of your variable declarations at the top of your code. 
 
 
 
