@@ -46,6 +46,12 @@ letters.reverse_each {|char| print char}
 Groups by the result of the block and returns a hash with the key as the result of the block and the values are the elements that correspond to the key. 
 
 *Example:*
+`letters = ["a", "a", "b", b", "c"]
+letters.group_by {|c| c } #=> {"a" => [2], "b" => [2], "c" => [1]}`
 
+`.select`
+Returns a new array contaning the elements which return "true" from the block. 
 
-.select()
+*Example*
+`letters = ["a", "b", "c"]
+letters.select {|c| c =~ /[aeiou]/ #=> [ "a"]
