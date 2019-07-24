@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Code Challenge - Camel Case"
-date:       2019-07-24 20:56:51 +0000
+date:       2019-07-24 16:56:52 -0400
 permalink:  code_challenge_-_camel_case
 ---
 
@@ -21,8 +21,8 @@ My first step would be plan out my solution. What is it I'm trying to do?
 
 So if step 1 is to split the string into an array, let's use the `.split` method:
 
-`def camelcase(string)
- string.split(" ")
+`def camelcase(string)<br>
+ string.split(" ")<br>
 end`
 
 I used the example string "hello there" as my practice string. When I run this in an IDE, this method returns:
