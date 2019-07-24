@@ -21,9 +21,9 @@ My first step would be plan out my solution. What is it I'm trying to do?
 
 So if step 1 is to split the string into an array, let's use the `.split` method:
 
-`<p>def camelcase(string)</p>
-<p> string.split(" ")</p>
-<p>end</p>`
+`def camelcase(string)
+ string.split(" ")
+end`
 
 I used the example string "hello there" as my practice string. When I run this in an IDE, this method returns:
 
