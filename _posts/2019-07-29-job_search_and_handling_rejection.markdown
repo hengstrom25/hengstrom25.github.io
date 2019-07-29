@@ -1,12 +1,12 @@
 ---
 layout: post
 title:      "Job Search and Handling Rejection"
-date:       2019-07-29 16:41:57 +0000
+date:       2019-07-29 12:41:58 -0400
 permalink:  job_search_and_handling_rejection
 ---
 
 
-Rejection is undoubtedly one of the worst jobs of any job search. You find a positon you are excited about, apply, maybe you have an interview or two, and then you get the "Thanks but no thanks" email. Sometimes you don't even get that far - and sometimes (most of the time?) you never hear anything at all. 
+Rejection is undoubtedly one of the worst parts of any job search. You find a positon you are excited about, apply, maybe you have an interview or two, and then you get the "Thanks but no thanks" email. Sometimes you don't even get that far - and sometimes (most of the time?) you never hear anything at all. 
 
 As an opera singer turned web developer, I am kind of an expert in rejection. In the opera world, we affectionately call the rejection letter a "PFO" - or "please *** off". A bit crass? Maybe, but it's become such a normal part of the operatic vernacular that now it just rolls off the tongue. (Plus it's a way to laugh a little about the inevitable sting each time you receive one of these, sometimes hilariously written, letters.) 
 
