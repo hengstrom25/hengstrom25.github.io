@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Javascript Callback Functions"
-date:       2019-08-08 20:18:18 +0000
+date:       2019-08-08 16:18:19 -0400
 permalink:  javascript_callback_functions
 ---
 
@@ -13,14 +13,14 @@ Simply put, a callback function is a function that is called as an argument to a
 
 For example:
 	
-`function sayHello(name, callback) {
+function sayHello(name, callback) {
  alert(`Hello, ${name}!`);
  callback();
- }`
+ }
  
-` sayHello('Heidi', function() {
+ sayHello('Heidi', function() {
   alert("Nice to meet you!");
-	});`
+	});
 
 If you run this in your console (open the Javascript Console in your developer tools), you'll get 2 alerts: 
 
