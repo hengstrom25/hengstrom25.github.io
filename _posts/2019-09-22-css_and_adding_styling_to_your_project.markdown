@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "CSS and adding styling to your project"
-date:       2019-09-22 12:22:26 +0000
+date:       2019-09-22 08:22:27 -0400
 permalink:  css_and_adding_styling_to_your_project
 ---
 
@@ -18,7 +18,7 @@ Before:
 
 After:
 
-![](https://imgur.com/oPY0P2B)
+![](https://i.imgur.com/oPY0P2B.png)
 
 Next, I worked on the recipe card component, moving things around a bit, adding my fun fonts, and playing with the spacing. 
 
