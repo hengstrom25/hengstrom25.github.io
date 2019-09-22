@@ -14,11 +14,11 @@ I started with the home page. I adjusted the left margin and the overall width o
 
 Before:
 
-![](https://imgur.com/VrDcCES)
+![](https://images4-g.ravelrycache.com/uploads/operadiva25/649610243/Screen_Shot_2019-09-22_at_8.16.09_AM_medium2.png)
 
 After:
 
-![](https://i.imgur.com/oPY0P2B.png)
+![](https://images4-g.ravelrycache.com/uploads/operadiva25/649610245/Screen_Shot_2019-09-22_at_8.17.05_AM_medium2.png)
 
 Next, I worked on the recipe card component, moving things around a bit, adding my fun fonts, and playing with the spacing. 
 
