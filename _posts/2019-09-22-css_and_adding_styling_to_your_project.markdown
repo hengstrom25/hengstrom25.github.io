@@ -18,7 +18,7 @@ Before:
 
 After:
 
-![](https://images4-g.ravelrycache.com/uploads/operadiva25/649610245/Screen_Shot_2019-09-22_at_8.17.05_AM_medium2.png)
+![](https://images4-f.ravelrycache.com/uploads/operadiva25/649610255/Screen_Shot_2019-09-22_at_8.14.31_AM_medium2.png)
 
 Next, I worked on the recipe card component, moving things around a bit, adding my fun fonts, and playing with the spacing. 
 
