@@ -14,7 +14,7 @@ I started with the home page. I adjusted the left margin and the overall width o
 
 Before:
 
-![](https://images4-g.ravelrycache.com/uploads/operadiva25/649610243/Screen_Shot_2019-09-22_at_8.16.09_AM_medium2.png)
+![](https://images4-f.ravelrycache.com/uploads/operadiva25/649610251/Screen_Shot_2019-09-22_at_8.15.57_AM_medium2.png)
 
 After:
 
@@ -24,10 +24,10 @@ Next, I worked on the recipe card component, moving things around a bit, adding 
 
 Before:
 
-![](https://imgur.com/h6yb0rW)
+![](https://images4-g.ravelrycache.com/uploads/operadiva25/649610243/Screen_Shot_2019-09-22_at_8.16.09_AM_medium2.png)
 
 After:
 
-![](https://imgur.com/6YZbW2l)
+![](https://images4-g.ravelrycache.com/uploads/operadiva25/649610245/Screen_Shot_2019-09-22_at_8.17.05_AM_medium2.png)
 
 The more I work on these, the more ideas I get and the more I want to try! There's more functionality I want to add to the app overall, but I'm enjoying spending a little time on CSS and adding some extra flair!
